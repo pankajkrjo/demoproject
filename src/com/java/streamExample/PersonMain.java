@@ -34,12 +34,18 @@ public class PersonMain {
       //    str.forEach(System.out::println);
        // System.out.println(str);
 
+        List<Person> str2=per.stream()
+                .filter(distinctByKey(Person::getRoolnumber))
+                .collect(Collectors.toList());
+
+
       for(Person value:str){
          int numer= Integer.parseInt(value.getRoolnumber());
          if(numer>3)
              System.out.println(value);
       }
 
+   //lemda expression
 
     }
 }
