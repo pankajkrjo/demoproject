@@ -13,14 +13,16 @@ public class DistinctMethod {
 
         List<String> name= Arrays.asList("java","php","angular","php");
         List<String> distict=name.stream()
-                .distinct().collect(Collectors.toList());
+                .distinct()
+                .collect(Collectors.toList());
         System.out.println(distict);
 
         List<Integer> numbers = Arrays.asList(1, 2, 3, 2, 4, 1, 5);
 
         List<Integer> uniqueNumbers = numbers.stream()
                 .distinct()
-                .collect(Collectors.toList());
+                .collect(Collectors.toList()
+                );
 
         System.out.println(uniqueNumbers); // Output: [1, 2, 3, 4, 5]
     }

@@ -9,7 +9,7 @@ public class EvenNumber {
     public static void main(String arg[]) {
         List<Integer> list = Arrays.asList(10, 12, 15, 14, 80);
         list.stream()
-                .filter(n -> n % 2 == 0)
+                .filter(n -> n % 2 != 0)
                 .forEach(System.out::println);
 
         int[] arr = {10, 12, 15, 14, 80};

@@ -9,6 +9,18 @@ public class NumbersStartingWithOne {
 
     public static void main(String args[]){
         List<Integer> list= Arrays.asList(10,42,17,8,9);
+        List<String> str=Arrays.asList("pankaj","php","net");
+        List<String> strs=new ArrayList<>();
+        for(String sti:str){
+            if(sti.startsWith("p")){
+                strs.add(sti);
+            }
+        }
+        System.out.println("String Start with"+ strs);
+
+        str.stream().filter(s->s.startsWith("p")).collect(Collectors.toList()).
+                forEach(System.out::println);
+
         List<Integer> result=new ArrayList<>();
        // for(int i=0; i<list.size();i++){
         for(Integer arr:list){
@@ -44,5 +56,9 @@ public class NumbersStartingWithOne {
                 .collect(Collectors.toList());
 
         System.out.println(listd);
+        myList.stream()
+                .map(n->n +"")
+                .filter(s->s.startsWith("1"))
+                .forEach(System.out::println);
     }
     }

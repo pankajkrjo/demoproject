@@ -19,5 +19,7 @@ public class PersonisEmpty {
         System.out.println(p.isEmpty());
         p.add(new PersonisEmpty("java",3));
         System.out.println(p.isEmpty());
+
+
     }
 }

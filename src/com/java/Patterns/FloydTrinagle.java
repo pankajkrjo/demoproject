@@ -11,7 +11,7 @@ public class FloydTrinagle {
             System.out.print("\n");
         }
 
-        System.out.print("-----");
+        System.out.print("-----oioo");
         int num=1;
         for(int i=1;i<n;i++){
             for(int j=2;j<i;j++){

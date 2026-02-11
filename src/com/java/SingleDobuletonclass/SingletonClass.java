@@ -19,10 +19,10 @@ public class SingletonClass {
 
     public static  void main(String args[]){
         SingletonClass singleton1 = SingletonClass.getInstance("thrid  Instance");
-        System.out.println(singleton1.getValue());
+        System.out.println(singleton1.getValue().hashCode());
 
         SingletonClass singleton2 = SingletonClass.getInstance("Second Instance");
-        System.out.println(singleton2.getValue());
+        System.out.println(singleton2.getValue().hashCode());
 
         // Both instances should be the same
         System.out.println(singleton1 == singleton2); // Should print true

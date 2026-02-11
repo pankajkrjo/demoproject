@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class StringLengthMapExample {
 
     public static void main(String[] args) {
-        List<String> obj= Arrays.asList("pankaj","java","php");
+        List<String> obj= Arrays.asList("pankaj","java","php","php");
         Map<Integer,List<String>> map=obj.stream()
                 .collect(Collectors.groupingBy(String::length));
 

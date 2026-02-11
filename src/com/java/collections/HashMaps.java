@@ -25,5 +25,9 @@ public class HashMaps {
 
         }
 
+        System.out.println("Stram example");
+        hashMap.entrySet().stream()
+                .forEach(e -> System.out.println("Key: " + e.getKey() + ", Value: " + e.getValue()));
+
     }
 }

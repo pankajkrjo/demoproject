@@ -30,14 +30,13 @@ public class Filter {
            //Sum of Squares of Even Numbers
                 int result=obj.stream()
                                  .filter(n->n%2==0)
-                               .map(n->n*n)
-                                .reduce(0,Integer::sum);
-                System.out.println(result);// Output: 818100 (90*90 + 900*900)
+                                 .map(n->n*n)
+
+                                 .reduce(0,Integer::sum);
+                System.out.println("result---  " +result);// Output: 818100 (90*90 + 900*900)
 
 
-                obj.parallelStream()
-                .filter(n -> n % 2 == 0)
-                .forEach(System.out::println);
+
 
     }
 }
