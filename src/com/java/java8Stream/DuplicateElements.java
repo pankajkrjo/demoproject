@@ -28,5 +28,9 @@ public class DuplicateElements {
         List<Integer> uniqueDate=set.stream().collect(Collectors.toList());
         uniqueDate.forEach(System.out::println);
 
+        System.out.print(" Character Object");
+        List<Character> charArrays=Arrays.asList('c','b','d','e','b');
+          charArrays.stream().distinct().collect(Collectors.toList()).forEach(System.out::println);
+
     }
 }

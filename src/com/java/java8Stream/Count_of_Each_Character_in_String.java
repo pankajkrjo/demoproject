@@ -29,5 +29,7 @@ public class Count_of_Each_Character_in_String {
         Map<String, Long> mapObject=list.stream()
                 .map(String::toLowerCase)
                 .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+
+        System.out.print(mapObject);
     }
 }
