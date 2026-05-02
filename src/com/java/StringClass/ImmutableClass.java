@@ -8,7 +8,7 @@ public class ImmutableClass {
         System.out.println(s);
 
         //MutableClass
-        StringBuffer st=new StringBuffer("Durga");
+        StringBuffer st=new StringBuffer("pankaj kumar");
         st.append("Software");
         System.out.println(st);
     }
