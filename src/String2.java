@@ -1,7 +1,4 @@
-import org.apache.commons.lang3.StringUtils;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+
 public class String2 {
 
     public static void main(String[] args) {
